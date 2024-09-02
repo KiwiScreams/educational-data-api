@@ -1,8 +1,5 @@
 import express from "express";
-import { homeworks } from "./data.js";
-import { grades } from "./data.js";
-import { subjects } from "./data.js";
-import { teachers } from "./data.js";
+import { homeworks, grades, subjects, teachers } from "./data.js";
 const app = express();
 app.get("/homeworks", async (_, res) => {
   return res.status(200).json({ message: "Homeworks Api Requests!", homeworks });
